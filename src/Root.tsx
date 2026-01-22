@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import { DemoReel, TOTAL_DURATION } from "./DemoReel";
+import { RainbowOrb } from "./DemoReel/RainbowOrb";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -14,6 +15,16 @@ export const RemotionRoot: React.FC = () => {
         id="DemoReel"
         component={DemoReel}
         durationInFrames={TOTAL_DURATION}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Rainbow Orb - Unity Particle System風 */}
+      <Composition
+        id="RainbowOrb"
+        component={RainbowOrb}
+        durationInFrames={300}
         fps={30}
         width={1920}
         height={1080}
