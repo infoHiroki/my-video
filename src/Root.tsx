@@ -6,6 +6,7 @@ import { DemoReel, TOTAL_DURATION } from "./DemoReel";
 import { RainbowOrb } from "./DemoReel/RainbowOrb";
 import { NetworkParticles } from "./DemoReel/NetworkParticles";
 import { ParticlesJsStyle } from "./DemoReel/ParticlesJsStyle";
+import { MerihariParticles } from "./DemoReel/MerihariParticles";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -47,6 +48,16 @@ export const RemotionRoot: React.FC = () => {
         id="ParticlesJsStyle"
         component={ParticlesJsStyle}
         durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Merihari Particles - 予備動作+余韻 */}
+      <Composition
+        id="MerihariParticles"
+        component={MerihariParticles}
+        durationInFrames={270}
         fps={30}
         width={1920}
         height={1080}
