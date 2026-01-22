@@ -4,6 +4,7 @@ import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import { DemoReel, TOTAL_DURATION } from "./DemoReel";
 import { RainbowOrb } from "./DemoReel/RainbowOrb";
+import { NetworkParticles } from "./DemoReel/NetworkParticles";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -24,6 +25,16 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="RainbowOrb"
         component={RainbowOrb}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Network Particles - 線で繋ぐparticles.js風 */}
+      <Composition
+        id="NetworkParticles"
+        component={NetworkParticles}
         durationInFrames={300}
         fps={30}
         width={1920}
