@@ -7,6 +7,7 @@ import { RainbowOrb } from "./DemoReel/RainbowOrb";
 import { NetworkParticles } from "./DemoReel/NetworkParticles";
 import { ParticlesJsStyle } from "./DemoReel/ParticlesJsStyle";
 import { MerihariParticles } from "./DemoReel/MerihariParticles";
+import { BiasedRandomParticles } from "./DemoReel/BiasedRandomParticles";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -58,6 +59,16 @@ export const RemotionRoot: React.FC = () => {
         id="MerihariParticles"
         component={MerihariParticles}
         durationInFrames={270}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Biased Random Particles - 偏った乱数 */}
+      <Composition
+        id="BiasedRandomParticles"
+        component={BiasedRandomParticles}
+        durationInFrames={360}
         fps={30}
         width={1920}
         height={1080}
