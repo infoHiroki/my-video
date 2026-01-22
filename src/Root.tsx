@@ -5,6 +5,7 @@ import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import { DemoReel, TOTAL_DURATION } from "./DemoReel";
 import { RainbowOrb } from "./DemoReel/RainbowOrb";
 import { NetworkParticles } from "./DemoReel/NetworkParticles";
+import { ParticlesJsStyle } from "./DemoReel/ParticlesJsStyle";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -35,6 +36,16 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NetworkParticles"
         component={NetworkParticles}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* particles.js Style - 複数シェイプ + ライン */}
+      <Composition
+        id="ParticlesJsStyle"
+        component={ParticlesJsStyle}
         durationInFrames={300}
         fps={30}
         width={1920}
