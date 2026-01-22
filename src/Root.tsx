@@ -8,6 +8,7 @@ import { NetworkParticles } from "./DemoReel/NetworkParticles";
 import { ParticlesJsStyle } from "./DemoReel/ParticlesJsStyle";
 import { MerihariParticles } from "./DemoReel/MerihariParticles";
 import { BiasedRandomParticles } from "./DemoReel/BiasedRandomParticles";
+import { FadeTrailParticles } from "./DemoReel/FadeTrailParticles";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -69,6 +70,16 @@ export const RemotionRoot: React.FC = () => {
         id="BiasedRandomParticles"
         component={BiasedRandomParticles}
         durationInFrames={360}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+
+      {/* Fade Trail Particles - フェードアウト軌跡 */}
+      <Composition
+        id="FadeTrailParticles"
+        component={FadeTrailParticles}
+        durationInFrames={300}
         fps={30}
         width={1920}
         height={1080}
